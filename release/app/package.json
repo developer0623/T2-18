@@ -1,0 +1,25 @@
+{
+  "name": "electron-react-boilerplate",
+  "version": "4.5.0",
+  "description": "A foundation for scalable desktop apps",
+  "main": "./dist/main/main.js",
+  "author": {
+    "name": "Electron React Boilerplate Maintainers",
+    "email": "electronreactboilerplate@gmail.com",
+    "url": "https://github.com/electron-react-boilerplate"
+  },
+  "scripts": {
+    "electron-rebuild": "node -r ts-node/register ../../.erb/scripts/electron-rebuild.js",
+    "link-modules": "node -r ts-node/register ../../.erb/scripts/link-modules.ts",
+    "postinstall": "npm run electron-rebuild && npm run link-modules"
+  },
+  "dependencies": {
+      "@ledgerhq/hw-transport-node-hid": "6.27.1",
+      "conseiljs": "5.1.0",
+      "conseiljs-ledgersigner": "5.0.4",
+      "conseiljs-softsigner": "5.0.4-1",
+      "loglevel": "1.8.0",
+      "node-fetch": "2.6.7"
+  },
+  "license": "MIT"
+}
